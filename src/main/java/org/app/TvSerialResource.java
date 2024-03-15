@@ -29,7 +29,6 @@ public class TvSerialResource {
 
     @GET
     @Path("/info")
-
     @Produces(MediaType.APPLICATION_JSON)
     public Response getTvSerialInformation(@QueryParam("title") String title) {
         TvSerial tvSerial = getTvSerial(title);
